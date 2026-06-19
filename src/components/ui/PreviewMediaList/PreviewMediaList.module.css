@@ -1,0 +1,56 @@
+.listsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.previewSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.previewHeader {
+  margin-bottom: 16px;
+}
+
+.previewTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: color 0.2s;
+}
+
+.previewTitle:hover {
+  color: var(--accent-primary);
+}
+
+.previewTitle span {
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.previewTitle:hover span {
+  transform: translateX(4px);
+}
+
+.previewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.emptyText {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+
+  background-color: var(--bg-card);
+  color: var(--color-text-secondary);
+}

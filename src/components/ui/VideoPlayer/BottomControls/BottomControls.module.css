@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.playPauseBtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  background: none;
+  color: var(--color-text-primary);
+
+  font-size: 1.2em;
+  cursor: pointer;
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.time {
+  width: max-content;
+  min-width: 40px;
+  height: 20px;
+  font-size: 0.9rem;
+  font-family: monospace;
+  touch-action: none;
+  user-select: none;
+}
+
+.rightActions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fullscreenBtn {
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  background: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: 1.2rem;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,19 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.loader p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

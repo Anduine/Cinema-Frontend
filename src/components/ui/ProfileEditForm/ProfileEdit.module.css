@@ -1,0 +1,189 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 1.8rem;
+  color: var(--color-text-primary);
+}
+
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar,
+.avatarPlaceholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarPlaceholder {
+  background-color: #333;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.avatarOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.avatarWrapper:hover .avatarOverlay {
+  opacity: 1;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Поля вводу */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: var(--color-text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary, #e50914);
+}
+
+.disabledInput {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Повідомлення */
+.successMessage,
+.errorMessage {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.successMessage {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.errorMessage {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Кнопки */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.cancelBtn,
+.saveBtn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelBtn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #aaa;
+}
+
+.cancelBtn:hover {
+  color: var(--color-text-primary);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.saveBtn {
+  background-color: var(--accent-primary, #e50914);
+  border: none;
+  color: var(--color-text-primary);
+}
+
+.saveBtn:hover {
+  background-color: #b80710;
+}
+
+.saveBtn:disabled,
+.cancelBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

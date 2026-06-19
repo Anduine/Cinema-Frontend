@@ -1,0 +1,80 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.avatarContainer {
+  flex-shrink: 0;
+}
+
+.avatar,
+.avatarPlaceholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.avatarPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-surface);
+  color: var(--color-text-primary);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.infoContainer {
+  flex-grow: 1;
+}
+
+.username {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  color: var(--color-text-primary);
+}
+
+.privateInfo {
+  margin-bottom: 16px;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.privateInfo p {
+  margin: 5px 0;
+}
+
+.bio {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.editBtn {
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.editBtn:hover {
+  background-color: var(--bg-hover);
+}

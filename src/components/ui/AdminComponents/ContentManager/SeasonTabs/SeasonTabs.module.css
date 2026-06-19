@@ -1,0 +1,45 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.caption {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.seasonBtn {
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--bg-surface);
+  color: var(--color-text-primary);
+
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: var(--bg-hover);
+  }
+}
+
+.btnPrimary {
+  background-color: var(--accent-primary);
+
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 4px;
+}

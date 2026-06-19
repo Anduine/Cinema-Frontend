@@ -1,0 +1,58 @@
+.container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding-top: 1rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 10;
+  interpolate-size: allow-keywords;
+
+  transition:
+    opacity 0.2s ease,
+    heigth 0.5s,
+    visibility 0.2s;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  min-width: 200px;
+
+  margin: 0;
+  padding: 0.5rem;
+
+  border-radius: 0 0 8px 8px;
+  border: 1px solid var(--color-border);
+
+  box-shadow: var(--shadow-dropdown);
+  background-color: var(--bg-surface);
+  list-style: none;
+}
+
+.item {
+  display: block;
+
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.item:hover {
+  background-color: var(--bg-hover);
+  color: var(--color-text-primary);
+}

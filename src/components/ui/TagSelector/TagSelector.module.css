@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  max-width: 580px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  max-height: 96px;
+  min-height: 48px;
+  padding: 0.5rem;
+
+  overflow-y: auto;
+
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+
+  background-color: var(--bg-base);
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease-out;
+}
+
+.inputWrapper:has(.input:disabled) {
+  background-color: var(--bg-disabled);
+  cursor: not-allowed;
+}
+
+.focused {
+  border-color: var(--accent-primary);
+}
+
+.input {
+  flex: 1;
+  min-width: 120px;
+
+  padding: 0.25rem 0;
+  border: none;
+
+  background: transparent;
+  color: var(--color-text-primary);
+  outline: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.25rem 0.6rem;
+  border-radius: 16px;
+
+  background-color: var(--accent-primary);
+  color: var(--color-text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.chipRemoveBtn {
+  margin-left: 0.4rem;
+
+  border: none;
+
+  background: none;
+  color: inherit;
+
+  font-size: 1.1rem;
+  line-height: 1;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.chipRemoveBtn:hover {
+  opacity: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  max-height: 220px;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+
+  background-color: var(--bg-card);
+  box-shadow: var(--shadow-dropdown);
+
+  z-index: 100;
+  overflow-y: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s;
+
+  list-style: none;
+}
+
+.dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+}
+
+.dropdownItem:hover {
+  background-color: var(--bg-hover);
+}
+
+.slugMuted {
+  margin-left: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+.loadingText {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}

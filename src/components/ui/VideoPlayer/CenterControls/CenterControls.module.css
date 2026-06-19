@@ -1,0 +1,31 @@
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.playBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

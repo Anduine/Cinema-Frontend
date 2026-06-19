@@ -1,0 +1,32 @@
+.streamsPanel {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.expandBtn {
+  width: 200px;
+  padding: 8px 10px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--accent-primary);
+  color: var(--color-text-primary);
+
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+}

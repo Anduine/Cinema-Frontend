@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.selectContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.selector {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-primary);
+  backdrop-filter: blur(4px);
+
+  cursor: pointer;
+  outline: none;
+}

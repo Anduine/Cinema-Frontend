@@ -1,0 +1,44 @@
+:root {
+  --font-text: "Onest", sans-serif;
+
+  --bg-base: #0a0a0c; /* Самый темный, фон приложения */
+  --bg-surface: #1f1f25; /* Фон карточек, дропдаунов, хедера */
+  --bg-card: #1c1c1c;
+  --bg-hover: #31313a; /* Фон при наведении на элементы */
+  --bg-disabled: #414142; /* Фон неактивных элементов */
+
+  --color-text-primary: #eceaea; /* Заголовки, активные пункты меню */
+  --color-text-secondary: #a1a1aa; /* Описания, неактивные пункты меню */
+  --color-text-muted: #71717a; /* Плейсхолдеры, мелкий шрифт */
+
+  --accent-primary: #eb8a45; /* Классический красный для кнопок/ссылок */
+  --accent-hover: #c77133; /* Красный при наведении */
+
+  --color-border: #27272a; /* Едва заметные линии */
+
+  --color-success: #10b981; /* Зеленый для успешных действий */
+  --color-error: #ef4444; /* Красный для ошибок */
+  --color-info: #3b82f6; /* Синий для информации */
+
+  --player-controls-color: #e0dcdc;
+
+  --shadow-dropdown: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-base: #c4b4a4;
+    --bg-surface: #ac9e90;
+    --bg-hover: #ac9f92;
+    --bg-disabled: #333336;
+
+    --color-text-primary: #242424;
+    --color-text-secondary: #434346;
+    --color-text-muted: #616163;
+
+    --accent-primary: #eb8a45;
+    --accent-hover: #c77133;
+
+    --color-border: #505052;
+  }
+}

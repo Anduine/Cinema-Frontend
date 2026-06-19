@@ -1,0 +1,34 @@
+.progressContainer {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statusText {
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.progressBarWrapper {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: var(--accent-primary);
+  transition: width 0.3s ease;
+}
+
+.progressPercentage {
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  text-align: right;
+  margin: 0;
+  font-weight: 600;
+}

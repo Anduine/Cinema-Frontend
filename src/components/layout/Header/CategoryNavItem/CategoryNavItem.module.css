@@ -1,0 +1,25 @@
+.navItem {
+  position: relative;
+  list-style: none;
+}
+
+.navLink {
+  padding: 0.5rem 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.navItem:hover .navLink {
+  color: var(--color-text-primary);
+}
+
+.navItem:hover > div {
+  opacity: 1;
+  visibility: visible;
+}

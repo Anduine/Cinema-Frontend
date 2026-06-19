@@ -1,0 +1,80 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 30;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+
+  width: clamp(400px, 600px, 800px);
+  max-width: 800px;
+  min-width: 400px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+
+  background-color: var(--bg-surface);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+  animation: slideUp 0.2s ease;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header h3 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+}
+
+.closeBtn {
+  border: none;
+
+  background: none;
+  color: var(--color-text-secondary);
+
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

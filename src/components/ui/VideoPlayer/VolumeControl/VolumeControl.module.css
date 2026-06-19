@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.soundBtn {
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  background: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+
+  svg {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+
+  width: 80px;
+
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.slider {
+  width: 80px;
+  accent-color: var(--accent-primary);
+  cursor: "pointer";
+}
+
+.show {
+  width: 80px;
+}
